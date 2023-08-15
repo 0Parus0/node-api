@@ -1,0 +1,28 @@
+http://localhost:5000/api/cities
+
+http://localhost:5000/api/cities/98443198
+
+POST http://localhost:5000/api/cities
+Content-Type: application/json
+
+{
+  "cityName": "Some City",
+  "country": "Some Country",
+  "emoji": "Some Emoji",
+  "date": "2023-04-0347-47:55.209z",
+  "notes": "",
+  "position": {
+    "lat": "36.967348477484",
+    "lng": "-2.134857585959"
+  },
+  "id": 75648393
+}
+
+PUT http://localhost:5000/api/cities/98443198
+Content-Type: application/json
+
+{
+    "notes": "new Notes"
+}
+
+DELETE http://localhost:5000/api/cities/75648393
